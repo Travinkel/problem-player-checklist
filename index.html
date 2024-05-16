@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Player Checklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Problem Player Checklist</h1>
+        <form id="checklist-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Consistently (2 points)</th>
+                        <th>Some of the time (1 point)</th>
+                        <th>Does not apply (0 points)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Rule Disregarding
+                                <span class="tooltiptext">Consistently ignores game rules or refuses to learn them, affecting gameplay and progression.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="ruleDisregarding" value="2"></td>
+                        <td><input type="radio" name="ruleDisregarding" value="1"></td>
+                        <td><input type="radio" name="ruleDisregarding" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Spotlight Hogging
+                                <span class="tooltiptext">Frequently interrupts others and monopolizes game time, preventing fellow players from participating or developing their characters.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="spotlightHogging" value="2"></td>
+                        <td><input type="radio" name="spotlightHogging" value="1"></td>
+                        <td><input type="radio" name="spotlightHogging" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Aggressive Behavior
+                                <span class="tooltiptext">Displays hostility towards other players or the DM, whether in character or out, including verbal attacks or threats.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="aggressiveBehavior" value="2"></td>
+                        <td><input type="radio" name="aggressiveBehavior" value="1"></td>
+                        <td><input type="radio" name="aggressiveBehavior" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Lack of Teamwork
+                                <span class="tooltiptext">Acts in self-interest or makes decisions that harm the group's cohesion, goals, or survival without reasonable in-game justification.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="lackOfTeamwork" value="2"></td>
+                        <td><input type="radio" name="lackOfTeamwork" value="1"></td>
+                        <td><input type="radio" name="lackOfTeamwork" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Metagaming
+                                <span class="tooltiptext">Regularly uses out-of-character knowledge to influence in-character decisions, undermining game integrity.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="metagaming" value="2"></td>
+                        <td><input type="radio" name="metagaming" value="1"></td>
+                        <td><input type="radio" name="metagaming" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Unreliable Participation
+                                <span class="tooltiptext">Frequently misses sessions without notice or reasonable explanation, disrupting campaign continuity and planning.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="unreliableParticipation" value="2"></td>
+                        <td><input type="radio" name="unreliableParticipation" value="1"></td>
+                        <td><input type="radio" name="unreliableParticipation" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Cheating
+                                <span class="tooltiptext">Attempts to manipulate dice rolls, character stats, or other game elements dishonestly.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="cheating" value="2"></td>
+                        <td><input type="radio" name="cheating" value="1"></td>
+                        <td><input type="radio" name="cheating" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Disrespect for the Game
+                                <span class="tooltiptext">Shows contempt for the game setting, story, or the efforts of the DM and other players, diminishing the group's enjoyment.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="disrespectForTheGame" value="2"></td>
+                        <td><input type="radio" name="disrespectForTheGame" value="1"></td>
+                        <td><input type="radio" name="disrespectForTheGame" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Boundary Violation
+                                <span class="tooltiptext">Disregards other players' comfort zones with inappropriate content or actions, despite previous feedback or established session zero agreements.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="boundaryViolation" value="2"></td>
+                        <td><input type="radio" name="boundaryViolation" value="1"></td>
+                        <td><input type="radio" name="boundaryViolation" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Conflict Instigation
+                                <span class="tooltiptext">Deliberately provokes in-game or out-of-game conflicts among players or between players and the DM, creating a hostile environment.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="conflictInstigation" value="2"></td>
+                        <td><input type="radio" name="conflictInstigation" value="1"></td>
+                        <td><input type="radio" name="conflictInstigation" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Refusal to Engage
+                                <span class="tooltiptext">Shows apathy or unwillingness to participate in roleplaying, combat, or decision-making, dragging down the group's energy.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="refusalToEngage" value="2"></td>
+                        <td><input type="radio" name="refusalToEngage" value="1"></td>
+                        <td><input type="radio" name="refusalToEngage" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Over-Negotiation
+                                <span class="tooltiptext">Constantly argues with the DM's decisions or game outcomes, slowing down the game and challenging the DM's authority excessively.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="overNegotiation" value="2"></td>
+                        <td><input type="radio" name="overNegotiation" value="1"></td>
+                        <td><input type="radio" name="overNegotiation" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Lack of Preparation
+                                <span class="tooltiptext">Comes to sessions without necessary materials, preparation, or recollection of previous events, requiring constant catch-up.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="lackOfPreparation" value="2"></td>
+                        <td><input type="radio" name="lackOfPreparation" value="1"></td>
+                        <td><input type="radio" name="lackOfPreparation" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Disruptive Behavior
+                                <span class="tooltiptext">Engages in behaviors that break game immersion or distract from the session, such as unrelated conversation, phone use, or inappropriate humor.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="disruptiveBehavior" value="2"></td>
+                        <td><input type="radio" name="disruptiveBehavior" value="1"></td>
+                        <td><input type="radio" name="disruptiveBehavior" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Resistance to Feedback
+                                <span class="tooltiptext">Responds negatively to constructive criticism or suggestions for improvement from the DM or fellow players.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="resistanceToFeedback" value="2"></td>
+                        <td><input type="radio" name="resistanceToFeedback" value="1"></td>
+                        <td><input type="radio" name="resistanceToFeedback" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Inflexible Roleplaying
+                                <span class="tooltiptext">Refuses to adapt their character's behavior even when it's clearly causing issues within the party or disrupting the narrative flow, insisting on "it's what my character would do" to the detriment of group harmony.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="inflexibleRoleplaying" value="2"></td>
+                        <td><input type="radio" name="inflexibleRoleplaying" value="1"></td>
+                        <td><input type="radio" name="inflexibleRoleplaying" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Loot Dominance
+                                <span class="tooltiptext">Always insists on taking the best loot or negotiating to get more than their fair share, without regard for the group's needs or fairness.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="lootDominance" value="2"></td>
+                        <td><input type="radio" name="lootDominance" value="1"></td>
+                        <td><input type="radio" name="lootDominance" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Gameplay Sabotage
+                                <span class="tooltiptext">Makes in-game decisions that knowingly sabotage missions, plans, or strategies the group has agreed upon, for personal amusement or gain.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="gameplaySabotage" value="2"></td>
+                        <td><input type="radio" name="gameplaySabotage" value="1"></td>
+                        <td><input type="radio" name="gameplaySabotage" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Lack of Respect for Game Time
+                                <span class="tooltiptext">Consistently shows up late to sessions, takes extended breaks, or otherwise disrespects the collective time commitment of the group.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="lackOfRespectForGameTime" value="2"></td>
+                        <td><input type="radio" name="lackOfRespectForGameTime" value="1"></td>
+                        <td><input type="radio" name="lackOfRespectForGameTime" value="0" checked></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tooltip">Failure to Engage with the Story
+                                <span class="tooltiptext">Shows little interest in the campaign's story, lore, or NPCs, and does not contribute to creating a shared narrative experience, often derailing plot points for personal entertainment.</span>
+                            </span>
+                        </td>
+                        <td><input type="radio" name="failureToEngageWithTheStory" value="2"></td>
+                        <td><input type="radio" name="failureToEngageWithTheStory" value="1"></td>
+                        <td><input type="radio" name="failureToEngageWithTheStory" value="0" checked></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" onclick="evaluatePlayer()">Evaluate Player</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
